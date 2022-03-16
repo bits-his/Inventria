@@ -34,7 +34,7 @@ body {
 
 .container {
     /* 1140px */
-    max-width: 130rem;
+    max-width: 120rem;
     padding: 0 3.2rem;
     margin: 0 auto;
 }
@@ -144,6 +144,14 @@ body {
     margin-bottom: 1.6rem;
 }
 
+.subheading-box-light {
+    background-color: #bddcf03b;
+    border-radius: 50px;
+    padding: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
 .subheading {
     display: block;
     font-size: 1.4rem;
@@ -166,6 +174,17 @@ body {
     color: transparent;
     text-transform: uppercase;
     letter-spacing: 0.75px;
+}
+
+.subheading-light {
+    display: block;
+    letter-spacing: 0.75px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    color: #4267b2a4;
 }
 
 .btn,

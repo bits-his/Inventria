@@ -16,6 +16,10 @@
     .grid--4-cols {
         grid-template-columns: repeat(3, 1fr);
     }
+    .pricing-plan--complete {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
 }
 
 
@@ -75,9 +79,11 @@
     .testimonials-container {
         padding: 9.6rem 3.2rem;
     }
-    .pricing-plan--complete {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pricing-plan {
+        width: 90%;
     }
 }
 
@@ -111,8 +117,8 @@
         justify-content: center;
         margin-top: 3.2rem;
     }
-    .logos img {
-        height: 2.4rem;
+    .pricing-plan {
+        width: 90%;
     }
     .step-number {
         font-size: 7.4rem;
@@ -190,9 +196,6 @@
         padding-left: 0%;
         padding-top: 15rem;
     }
-    .pricing-arrangement {
-        flex-wrap: wrap;
-    }
 }
 
 
@@ -217,7 +220,7 @@
         margin-bottom: 5.2rem;
     }
     .pricing-plan {
-        width: 100%;
+        width: 90%;
     }
     .grid--footer {
         grid-template-columns: repeat(6, 1fr);
@@ -272,7 +275,7 @@
         width: 80%;
     }
     .logos img {
-        height: 1.2rem;
+        height: 3.4rem;
     }
     .step-img-box:nth-child(2) {
         grid-row: 1;
