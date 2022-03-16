@@ -122,7 +122,7 @@ topBtn.addEventListener("click", () => {
 });
 //////////////////////////////////////////
 
-const toggleBtn = document.querySelector(".btnz");
+const toggleBtn = document.querySelector(".dark-mode");
 const articlesContainer = document.querySelector("html");
 
 toggleBtn.addEventListener("click", () => {
