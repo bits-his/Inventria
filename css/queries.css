@@ -227,14 +227,18 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        text-align: center;
+        text-align: center !important;
         margin: 0 auto;
+        align-items: center;
+    }
+    .list {
+        align-items: center;
     }
     .heading-secondary {
         margin-bottom: 5.2rem;
     }
     .pricing-plan {
-        width: 100%;
+        width: 70%;
     }
     .grid--footer {
         grid-template-columns: repeat(6, 1fr);
