@@ -10,7 +10,16 @@ console.log(h1);
 //   h1.style.backgroundColor = "red";
 //   h1.style.padding = "5rem";
 // });
+// hide preloader on page load
+const preloader = document.querySelector(".preloader");
+window.addEventListener("load", () => {
+    preloader.classList.add("remove");
+});
 
+const header = document.querySelector(".header"),
+    navBtn = document.querySelector(".nav-toggler"),
+    nav = document.querySelector("#nav-list"),
+    navItems = document.querySelectorAll(".nav-item");
 ///////////////////////////////////////////////////////////
 // Make mobile navigation work
 
@@ -95,6 +104,20 @@ function checkFlexGap() {
     if (!isSupported) document.body.classList.add("no-flexbox-gap");
 }
 checkFlexGap();
+
+// back to top
+const topBtn = document.querySelector(".to-top");
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 1000) {
+        topBtn.classList.add("show");
+    } else {
+        topBtn.classList.remove("show");
+    }
+});
+
+topBtn.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+});
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

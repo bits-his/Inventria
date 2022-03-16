@@ -80,6 +80,143 @@ body {
     background-color: #fff;
 }
 
+body[data-aos-easing="new-easing"] [data-aos],
+[data-aos][data-aos][data-aos-easing="new-easing"] {
+    transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-self: auto;
+    background: #d9e1f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Plus Jakarta Display", sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #3b5da0;
+    z-index: 100;
+    transform: translateY(0);
+    transition: all 700ms ease-in-out;
+    transition: all 10000ms ease-out;
+}
+
+.preloader.remove {
+    transform: translateY(-2000%);
+}
+
+.preloader .lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.preloader .lds-ellipsis div {
+    position: absolute;
+    top: 33px;
+    width: 15px;
+    height: 15px;
+    border-radius: 30%;
+    background: #3b5da0;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.preloader .lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.9s infinite;
+}
+
+.preloader .lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.9s infinite;
+}
+
+.preloader .lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.9s infinite;
+}
+
+.preloader .lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.9s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+
+.to-top {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    background: #3b5da0;
+    border-radius: 50%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 5;
+    position: fixed;
+    animation: bulge infinite 2000ms;
+    opacity: 50%;
+    width: 0;
+    transition: all 700ms ease-in-out;
+}
+
+.to-top.show {
+    opacity: 0.8;
+    width: 30px;
+}
+
+.to-top i {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@keyframes bulge {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 section {
     padding-top: 8.727rem;
 }

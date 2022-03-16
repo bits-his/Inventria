@@ -115,6 +115,12 @@ body {
     margin-bottom: 9.6rem;
 }
 
+.heading-secondarys {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
 .heading-tertiary {
     font-size: 3.3rem;
     line-height: 1.2;
@@ -268,6 +274,10 @@ body {
 
 .margin-bottom-md {
     margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 9.6rem !important;
 }
 
 .center-text {
