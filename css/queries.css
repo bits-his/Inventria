@@ -110,6 +110,9 @@
     .hero-img-box {
         text-align: center;
     }
+    .grid--4-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .hero-img {
         width: 60%;
     }
@@ -209,19 +212,21 @@
 /**************************/
 
 @media (max-width: 44em) {
-    .grid--3-cols,
-    .grid--4-cols {
+    .grid--3-cols {
         grid-template-columns: repeat(2, 1fr);
     }
     .diets {
         grid-column: 1 / -1;
         justify-self: center;
     }
+    .grid--4-cols {
+        grid-template-columns: 1fr;
+    }
     .heading-secondary {
         margin-bottom: 5.2rem;
     }
     .pricing-plan {
-        width: 90%;
+        width: 100%;
     }
     .grid--footer {
         grid-template-columns: repeat(6, 1fr);
