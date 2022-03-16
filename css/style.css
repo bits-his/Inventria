@@ -381,7 +381,7 @@ body[data-aos-easing="new-easing"] [data-aos],
 .dark-mode {
     position: absolute;
     top: 20px;
-    right: 20px;
+    left: 10px;
     color: var(--white);
     background: var(--shade-light);
     border-radius: 50%;
@@ -389,9 +389,12 @@ body[data-aos-easing="new-easing"] [data-aos],
     line-height: 30px;
     text-align: center;
     cursor: pointer;
-    z-index: 1000;
+    z-index: 1001;
     position: fixed;
     animation: bulged infinite 2000ms;
+    opacity: 50%;
+    width: 0;
+    transition: all 700ms ease-in-out;
     opacity: 0.8;
     width: 30px;
 }

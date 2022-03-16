@@ -1,5 +1,3 @@
-use("strict");
-
 console.log("Hello world!");
 
 const myName = "Author- The Official Josh";
@@ -88,12 +86,7 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 
 ////////////////////////////////////////////
-const toggleBtn = document.querySelector(".btnz");
-const articlesContainer = document.querySelector("html");
 
-toggleBtn.addEventListener("click", () => {
-    document.documentElement.classList.toggle("dark");
-});
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {
@@ -126,6 +119,14 @@ window.addEventListener("scroll", () => {
 
 topBtn.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
+});
+//////////////////////////////////////////
+
+const toggleBtn = document.querySelector(".btnz");
+const articlesContainer = document.querySelector("html");
+
+toggleBtn.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
 });
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
