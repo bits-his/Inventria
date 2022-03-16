@@ -916,7 +916,7 @@ section {
     text-transform: uppercase;
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--white);
+    color: var(--btn-white);
     background-color: var(--special-color);
     padding: 0.8rem 8rem;
     transform: rotate(45deg);
