@@ -99,7 +99,9 @@ Medium: 11px
     --shadow: #365c96;
     --to-top-white: #fff;
     --sticky-color: rgba(255, 255, 255, 0.8);
+    --sticky-colored: rgba(255, 255, 255, 0.8);
     --sticky-shadow: rgba(0, 0, 0, 0.03);
+    --sticky-coloring: #000;
 }
 
 .dark {
@@ -140,6 +142,8 @@ Medium: 11px
     --shadow: #365c96;
     --to-top-white: #fff;
     --sticky-color: rgba(0, 0, 0, 0.8);
+    --sticky-colored: rgba(0, 0, 0, 0.9);
+    --sticky-coloring: #fff;
     --sticky-shadow: rgba(255, 255, 255, 0.03);
 }
 
@@ -423,7 +427,7 @@ body[data-aos-easing="new-easing"] [data-aos],
 
 .dark-mode {
     position: absolute;
-    top: 20px;
+    top: 50px;
     right: 10px;
     color: var(--to-top-white);
     background: var(--top-shade-light);
