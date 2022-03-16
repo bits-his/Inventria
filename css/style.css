@@ -98,11 +98,11 @@ body[data-aos-easing="new-easing"] [data-aos],
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    font-family: "Plus Jakarta Display", sans-serif;
+    font-family: "Rubik", sans-serif;
     font-size: 60px;
     font-weight: bolder;
     color: #3b5da0;
-    z-index: 100;
+    z-index: 1000;
     transform: translateY(0);
     transition: all 700ms ease-in-out;
     transition: all 10000ms ease-out;
