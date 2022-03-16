@@ -635,6 +635,8 @@ section {
     padding: 4.8rem;
     justify-self: stretch;
     width: 100%;
+    position: relative;
+    overflow: hidden;
 }
 
 .pricing-plan--complete:hover {

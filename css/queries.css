@@ -4,13 +4,16 @@
 /**************************/
 
 
-/* BELOW 2138px (Smaller desktops) */
+/* BELOW 1600px (Smaller desktops) */
 
 
 /**************************/
 
-@media (max-width: 84em) {
+@media (max-width: 100em) {
     .pricing-arrangement {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .grid--4-cols {
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -72,9 +75,9 @@
     .testimonials-container {
         padding: 9.6rem 3.2rem;
     }
-    .grid--3-cols,
-    .grid--4-cols {
-        grid-template-columns: repeat(3, 1fr);
+    .pricing-plan--complete {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
     }
 }
 
