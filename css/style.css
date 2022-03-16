@@ -661,17 +661,14 @@ section {
     width: 85%;
 }
 
-.background-pattern {
+
+/* .background-pattern {
     position: absolute;
     width: 100vw;
     margin-left: -49.6rem;
     z-index: 55;
     transform-origin: right bottom;
     /* or 100% 100%, same thing */
-    transform: rotate(90deg) translate(0, -100%)
-    /* go from bottom right to top right */
-    rotate(90deg) translate(0, 100%);
-}
 
 .delivered-meals {
     display: flex;
