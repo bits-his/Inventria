@@ -1,6 +1,8 @@
+use("strict");
+
 console.log("Hello world!");
 
-const myName = "Rekod";
+const myName = "Author- The Official Josh";
 const h1 = document.querySelector(".heading-primary");
 console.log(myName);
 console.log(h1);
@@ -85,6 +87,13 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
+////////////////////////////////////////////
+const toggleBtn = document.querySelector(".btnz");
+const articlesContainer = document.querySelector("html");
+
+toggleBtn.addEventListener("click", () => {
+    document.documentElement.classList.toggle("dark");
+});
 ///////////////////////////////////////////////////////////
 // Fixing flexbox gap property missing in some Safari versions
 function checkFlexGap() {

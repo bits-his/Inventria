@@ -1,3 +1,28 @@
+:root {
+    --primary: #4267b2;
+    --tint-lightest: #d9e1f0;
+    --tint-lighter: #bddcf0;
+    --tint-light: #5576ba;
+    --shade-light: #3b5da0;
+    --shade--dark: #141f35;
+    --primary-light-transparent: #4267b2a4;
+    --primary-dark-transparent: #4267b270;
+    --tint-lightest-colorless: #d9e1f000;
+    --tint-lighter-transparent: #bddcf03b;
+    --special-color: #312e81;
+    --white: #fff;
+    --grey-lightest: #ddd;
+    --hue-light-transparent: #ecf0f79c;
+    --hue-light: #e7f2fa;
+    --hue-lighter: #e7f2fa70;
+    --grey-lighter: #6f6f6f;
+    --grey-light: #767676;
+    --grey: #555;
+    --grey-dark: #aaa;
+    --grey-darker: #333;
+    --shadow: #365c96;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -18,7 +43,7 @@ body {
     font-family: "Rubik", sans-serif;
     line-height: 1;
     font-weight: 400;
-    color: #555;
+    color: var(--grey);
     /* Only works if there is nothing absolutely positioned in relation to body */
     overflow-x: hidden;
 }
@@ -97,7 +122,7 @@ body {
 .heading-secondary,
 .heading-tertiary {
     font-weight: 700;
-    color: #333;
+    color: var(--grey-darker);
     /* color: #45260a; */
     /* color: #343a40; */
     letter-spacing: -0.5px;
@@ -129,7 +154,7 @@ body {
 }
 
 .subheading-box {
-    background-color: #bddcf0;
+    background-color: var(--tint-lighter);
     border-radius: 50px;
     padding: 1.6rem;
     display: inline-block;
@@ -137,7 +162,7 @@ body {
 }
 
 .subheading-box-dark {
-    background-color: #4267b2;
+    background-color: var(--primary);
     border-radius: 50px;
     padding: 1.6rem;
     display: inline-block;
@@ -145,7 +170,7 @@ body {
 }
 
 .subheading-box-light {
-    background-color: #bddcf03b;
+    background-color: var(--tint-lighter-transparent);
     border-radius: 50px;
     padding: 1.6rem;
     display: inline-block;
@@ -156,7 +181,7 @@ body {
     display: block;
     font-size: 1.4rem;
     font-weight: 500;
-    background-image: linear-gradient(45deg, #4267b2, #4267b2);
+    background-image: linear-gradient(45deg, var(--primary), var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -168,7 +193,7 @@ body {
     display: block;
     font-size: 1.4rem;
     font-weight: 500;
-    background-image: linear-gradient(45deg, #bddcf0, #bddcf0);
+    background-image: linear-gradient( 45deg, var(--tint-lighter), var(--tint-lighter));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -184,7 +209,7 @@ body {
     letter-spacing: 0.75px;
     font-weight: 500;
     text-align: center;
-    color: #4267b2a4;
+    color: var(--primary-light-transparent);
 }
 
 .btn,
@@ -207,58 +232,59 @@ body {
 
 .btn--full:link,
 .btn--full:visited {
-    background-image: linear-gradient(270deg, #5576ba, #4267b2);
-    color: #fff;
+    background-image: linear-gradient(270deg, var(--tint-light), var(--primary));
+    color: var(--white);
 }
 
 .btn--full:hover,
 .btn--full:active {
-    background-image: linear-gradient(270deg, #5576ba, #4267b2);
-    box-shadow: 0 5px 20px #365c96;
+    background-image: linear-gradient(270deg, var(--tint-light), var(--primary));
+    box-shadow: 0 5px 20px var(--shadow);
 }
 
 .btn--outline:link,
 .btn--outline:visited {
-    background-color: #fff;
-    color: #555;
+    background-color: var(--white);
+    color: var(--grey);
 }
 
 .btn--outline:hover,
 .btn--outline:active {
-    background-color: #d9e1f0;
-    /* border: 3px solid #fff; */
+    background-color: var(--tint-lightest);
+    /* border: 3px solid var(--white); */
     /* Trick to add border inside */
-    box-shadow: inset 0 0 0 3px #fff;
+    box-shadow: inset 0 0 0 3px var(--white);
 }
 
 .btn--form {
-    background-image: linear-gradient(270deg, #5576ba, #4267b2);
-    color: #fff;
+    background-image: linear-gradient(270deg, var(--tint-light), var(--primary));
+    color: var(--white);
     max-width: fit-content;
     padding: 1.2rem 2.6rem;
     margin: 0 auto;
 }
 
 .btn--form:hover {
-    background-image: linear-gradient(270deg, #5576ba, #4267b2);
-    box-shadow: 0 5px 20px #365c96;
+    background-image: linear-gradient(270deg, var(--tint-light), var(--primary));
+    box-shadow: 0 5px 20px var(--shadow);
 }
 
 .link:link,
 .link:visited {
     display: inline-block;
-    color: #4267b2;
+    color: var(--primary);
     text-decoration: none;
     border-bottom: 1px solid currentColor;
     padding-bottom: 2px;
     transition: all 0.3s;
 }
 
-.link:hover,
+
+/* .link:hover,
 .link:active {
     color: #cf711f;
     border-bottom: 1px solid transparent;
-}
+} */
 
 .list {
     list-style: none;
@@ -278,7 +304,7 @@ body {
 .list-icon {
     width: 3rem;
     height: 3rem;
-    color: #4267b2;
+    color: var(--primary);
 }
 
 *:focus {
