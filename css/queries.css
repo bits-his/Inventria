@@ -4,6 +4,21 @@
 /**************************/
 
 
+/* BELOW 2138px (Smaller desktops) */
+
+
+/**************************/
+
+@media (max-width: 84em) {
+    .pricing-arrangement {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/**************************/
+
+
 /* BELOW 1344px (Smaller desktops) */
 
 
@@ -18,17 +33,6 @@
     }
     .gallery {
         grid-template-columns: repeat(2, 1fr);
-    }
-    .pricing-arrangement {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: end;
-        justify-items: end;
-    }
-    .pricing-plan--starter,
-    .pricing-plan--free,
-    .pricing-plan--complete {
-        width: 100%;
     }
 }
 
@@ -67,6 +71,10 @@
     }
     .testimonials-container {
         padding: 9.6rem 3.2rem;
+    }
+    .grid--3-cols,
+    .grid--4-cols {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 

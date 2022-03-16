@@ -40,16 +40,17 @@ body {
 }
 
 .containers {
-    max-width: 150rem;
-    padding: 0 3.2rem;
-    margin: 0 auto;
-}
-
-.containers {
     max-width: 170rem;
     padding: 0 3.2rem;
     margin: 0 auto;
 }
+
+
+/* .containerss {
+    max-width: 170rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+} */
 
 .grid {
     display: grid;
