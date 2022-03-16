@@ -83,7 +83,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .pricing-plan {
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -121,7 +121,7 @@
         margin-top: 3.2rem;
     }
     .pricing-plan {
-        width: 90%;
+        width: 100%;
     }
     .step-number {
         font-size: 7.4rem;
@@ -200,6 +200,10 @@
         padding-left: 0%;
         padding-top: 15rem;
     }
+    .new {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
 }
 
 
@@ -220,7 +224,11 @@
         justify-self: center;
     }
     .grid--4-cols {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+        margin: 0 auto;
     }
     .heading-secondary {
         margin-bottom: 5.2rem;
