@@ -1,3 +1,4 @@
+"use strict";
 console.log("Hello world!");
 
 const myName = "Author- The Official Josh";
@@ -128,6 +129,55 @@ const articlesContainer = document.querySelector("html");
 toggleBtn.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
 });
+
+// const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+// if (prefersDarkScheme.matches) {
+//     document.body.classList.add("dark");
+//     toggleBtn.addEventListener("click", () => {
+//         document.documentElement.classList.toggle("dark" || "light");
+//     });
+// } else {
+//     document.body.classList.remove("dark");
+// }
+
+// Select the button
+// const toggleBtn = document.querySelector(".dark-mode");
+// // Check for dark mode preference at the OS level
+// const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+// // Get the user's theme preference from local storage, if it's available
+// const currentTheme = localStorage.getItem("theme");
+// // If the user's preference in localStorage is dark...
+// if (currentTheme == "dark") {
+//     // ...let's toggle the .dark-theme class on the body
+//     document.documentElement.classList.toggle("dark");
+//     // Otherwise, if the user's preference in localStorage is light...
+// } else if (currentTheme == "light") {
+//     // ...let's toggle the .light-theme class on the body
+//     document.documentElement.classList.toggle("light");
+// }
+
+// // Listen for a click on the button
+// toggleBtn.addEventListener("click", function() {
+//     // If the user's OS setting is dark and matches our .dark class...
+//     if (prefersDarkScheme.matches) {
+//         // ...then toggle the light mode class
+//         document.documentElement.classList.toggle("dark");
+//         // ...but use .dark if the .light class is already on the body,
+//         var theme = document.documentElement.classList.contains("light") ?
+//             "light" :
+//             "dark";
+//     } else {
+//         // Otherwise, let's do the same thing, but for .dark
+//         document.documentElement.classList.toggle("dark");
+//         var theme = document.documentElement.classList.contains("dark") ?
+//             "dark" :
+//             "light";
+//     }
+//     // Finally, let's save the current preference to localStorage to keep using it
+//     localStorage.setItem("theme", theme);
+// });
 
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 

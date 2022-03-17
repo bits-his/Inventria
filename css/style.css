@@ -111,8 +111,8 @@ Medium: 11px
     --dark-tint-lighter: #60ffff;
     --dark-primary: #3879ff;
     --dark-primarying: #0d1d26;
-    --btn-primary: #3c79f7;
-    --btn-tint-light: #0047ff;
+    --btn-primary: #0047ff;
+    --btn-tint-light: #0846c5;
     --icon: #60ffff;
     --icon-box: #0d1d26;
     --special-color: #1814a8;
@@ -214,6 +214,7 @@ Medium: 11px
     --sticky-color: rgba(255, 255, 255, 0.8);
     --sticky-shadow: rgba(0, 0, 0, 0.03);
 }
+
 
 .dark {
     --primary: #3e7bf6;
@@ -1318,7 +1319,7 @@ section {
 }
 
 .pricing-plan--complete:hover {
-    box-shadow: 0 2px 10px var(--dark-transparent);
+    box-shadow: 0 5px 15px var(--primary-dark-transparent);
     cursor: pointer;
 }
 
