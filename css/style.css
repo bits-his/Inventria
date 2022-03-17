@@ -69,11 +69,12 @@ Medium: 11px
     --icon: #4267b2;
     --icon-box: #bddcf0;
     --tint-lightest: #d9e1f0;
+    --step-tint-lightest: #bddcf0;
+    --step-tint-lighter: #d9e1f0;
     --pricing-tint-lightest: #d9e1f0;
     --complete-tint-lightest: #d9e1f0;
     --tint-lighter: #bddcf0;
     --dark-tint-lighter: #bddcf0;
-    --step-tint-lighter: #bddcf0;
     --tint-light: #5576ba;
     --btn-tint-light: #5576ba;
     --shade-light: #3b5da0;
@@ -113,6 +114,8 @@ Medium: 11px
     --btn-primary: #4267b2;
     --icon: #4267b2;
     --icon-box: #bddcf0;
+    --tint-lightest: #d9e1f0;
+    --step-tint-lightest: #d9e1f0;
     --tint-lightest: #d9e1f0;
     --pricing-tint-lightest: #d9e1f0;
     --complete-tint-lightest: #d9e1f0;
@@ -165,6 +168,7 @@ Medium: 11px
     --top-shade-light: #2253b4;
     --pricing-shade-light: #0070ff;
     --tint-lightest: #090c10;
+    --step-tint-lightest: #090c10;
     --pricing-tint-lightest: #0b3380;
     --complete-tint-lightest: #181f23;
     --tint-lighter: #2a3338;
@@ -1297,7 +1301,7 @@ section {
 .step-img-box::after {
     width: 45%;
     padding-bottom: 45%;
-    background-color: var(--tint-lightest);
+    background-color: var(--step-tint-lightest);
     z-index: 2;
 }
 
