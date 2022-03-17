@@ -106,6 +106,51 @@ Medium: 11px
     --sticky-coloring: #000;
 }
 
+.light {
+    --primary: #4267b2;
+    --dark-primary: #4267b2;
+    --dark-primarying: #4267b2;
+    --btn-primary: #4267b2;
+    --icon: #4267b2;
+    --icon-box: #bddcf0;
+    --tint-lightest: #d9e1f0;
+    --pricing-tint-lightest: #d9e1f0;
+    --complete-tint-lightest: #d9e1f0;
+    --tint-lighter: #bddcf0;
+    --dark-tint-lighter: #bddcf0;
+    --step-tint-lighter: #bddcf0;
+    --tint-light: #5576ba;
+    --btn-tint-light: #5576ba;
+    --shade-light: #3b5da0;
+    --pricing-shade-light: #3b5da0;
+    --top-shade-light: #3b5da0;
+    --shade--dark: #141f35;
+    --primary-light-transparent: #4267b2a4;
+    --primary-lighting-transparent: #4267b2a4;
+    --primary-dark-transparent: #4267b270;
+    --dark-transparent: #4267b270;
+    --tint-lightest-colorless: #d9e1f000;
+    --tint-lighter-transparent: #bddcf03b;
+    --special-color: #9492d8;
+    --white: #fff;
+    --btn-white: #fff;
+    --grey-lightest: #ddd;
+    --hue-light-transparent: #ecf0f79c;
+    --hue-light: #e7f2fa;
+    --hue-lighter: #e7f2fa70;
+    --grey-lighter: #6f6f6f;
+    --grey-light: #767676;
+    --grey: #555;
+    --grey-dark: #aaa;
+    --grey-darker: #333;
+    --shadow: #365c96;
+    --to-top-white: #fff;
+    --sticky-color: rgba(255, 255, 255, 0.8);
+    --sticky-colored: rgba(255, 255, 255, 0.8);
+    --sticky-shadow: rgba(0, 0, 0, 0.03);
+    --sticky-coloring: #000;
+}
+
 .dark {
     --primary: #3e7bf6;
     --dark-tint-lighter: #60ffff;
@@ -251,30 +296,14 @@ Medium: 11px
     --sticky-shadow: rgba(255, 255, 255, 0.03);
 } */
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
-html {
-    /* font-size: 10px; */
-    /* 10px / 16px = 0.625 = 62.5% */
-    /* Percentage of user's browser font-size setting */
-    font-size: 62.5%;
-    overflow-x: hidden;
-    /* Does NOT work on Safari */
-    /* scroll-behavior: smooth; */
-}
+/* ********************************************* */
 
-body {
-    font-family: "Rubik", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: var(--grey);
-    /* Only works if there is nothing absolutely positioned in relation to body */
-    overflow-x: hidden;
-}
+
+/* GENERAL RULES -  SOME ALREADY OVERRIDDEN */
+
+
+/* ****************************************** */
 
 
 /**************************/
@@ -304,6 +333,9 @@ body {
     padding: 0 3.2rem;
     margin: 0 auto;
 } */
+
+
+/* GRIDS SYSTEM TO MAKE MY LIFE EASIER 🤣🤣🤣🤣 */
 
 .grid {
     display: grid;
@@ -341,6 +373,9 @@ body {
 .grid--center-v {
     align-items: center;
 }
+
+
+/* ALIGNMENT AND HEADINGS STYLING */
 
 .center {
     text-align: center;
@@ -380,6 +415,9 @@ body {
     line-height: 1.2;
     margin-bottom: 3.2rem;
 }
+
+
+/* SUBHEADINGS */
 
 .subheading-box {
     background-color: var(--icon-box);
@@ -440,6 +478,9 @@ body {
     color: var(--primary-lighting-transparent);
 }
 
+
+/* BUTTON STYLINGS */
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -496,6 +537,9 @@ body {
     background-image: linear-gradient( 270deg, var(--btn-tint-light), var(--btn-primary));
     box-shadow: 0 5px 20px var(--shadow);
 }
+
+
+/* LINKS - RARELY USED BUT I NEED IT TO MAKE MY LIFE EASIER */
 
 .link:link,
 .link:visited {
@@ -562,6 +606,9 @@ strong {
     font-weight: 500;
 }
 
+
+/* PRELOADER */
+
 .preloader {
     position: fixed;
     top: 0;
@@ -576,8 +623,8 @@ strong {
     flex-direction: column;
     justify-content: center;
     font-family: "Rubik", sans-serif;
-    font-size: 60px;
-    font-weight: bolder;
+    font-size: 6rem;
+    font-weight: 600;
     color: var(--shade-light);
     z-index: 1000;
     transform: translateY(0);
@@ -625,6 +672,9 @@ strong {
     left: 56px;
     animation: lds-ellipsis3 0.9s infinite;
 }
+
+
+/* PRELOADER ANIMATIONS - ANIMATIONS IN GENERAL */
 
 @keyframes lds-ellipsis1 {
     0% {
@@ -692,6 +742,9 @@ strong {
     }
 }
 
+
+/* GLOBAL CLASSES */
+
 * {
     padding: 0;
     margin: 0;
@@ -714,10 +767,11 @@ body {
     background-color: var(--white);
 }
 
-body[data-aos-easing="new-easing"] [data-aos],
+
+/* body[data-aos-easing="new-easing"] [data-aos],
 [data-aos][data-aos][data-aos-easing="new-easing"] {
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
-}
+} */
 
 .preloader {
     position: fixed;
