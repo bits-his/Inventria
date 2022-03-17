@@ -130,6 +130,7 @@ const articlesContainer = document.querySelector("html");
 
 let logoImage = document.getElementById("logo");
 let iconImage = document.getElementById("icon");
+let logosImage = document.getElementById("logos");
 toggleBtn.addEventListener("click", () => {
     document.documentElement.classList.toggle("dark");
 
@@ -137,13 +138,13 @@ toggleBtn.addEventListener("click", () => {
     if (initialMode && initialMode === "dark") {
         localStorage.setItem("colorMode", "light");
         logoImage.setAttribute("src", "images/logo.png");
+        logosImage.setAttribute("src", "images/logo.png");
         iconImage.setAttribute("class", "ph-moon-stars-fill");
-        iconImage.setAttribute.remove("class", "ph-sun-fill");
     } else {
         localStorage.setItem("colorMode", "dark");
         logoImage.setAttribute("src", "images/logo-black.png");
+        logosImage.setAttribute("src", "images/logo-black.png");
         iconImage.setAttribute("class", "ph-sun-fill");
-        iconImage.setAttribute.remove("class", "ph-moon-stars-fill");
     }
 });
 ///////////////////////////////
@@ -156,7 +157,7 @@ if (prefersDarkScheme.matches) {
     localStorage.setItem("colorMode", "dark");
     logoImage.setAttribute("src", "images/logo-black.png");
     iconImage.setAttribute("class", "ph-sun-fill");
-    iconImage.setAttribute.remove("class", "ph-moon-stars-fill");
+    logosImage.setAttribute("src", "images/logo-black.png");
 }
 // toggleBtn.addEventListener("toggle", () => {
 //     document.documentElement.classList.toggle("light");

@@ -332,6 +332,12 @@ Medium: 11px
 }
 
 
+/* .bg-color {
+    background-color: var(--hue-light-transparent) !important;
+    background: var(--hue-light-transparent) !important;
+} */
+
+
 /* .containerss {
     max-width: 170rem;
     padding: 0 3.2rem;
@@ -632,8 +638,6 @@ strong {
     color: var(--shade-light);
     z-index: 1000;
     transform: translateY(0);
-    transition: all 700ms ease-in-out;
-    transition: all 10000ms ease-out;
 }
 
 .preloader.remove {
