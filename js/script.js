@@ -138,7 +138,7 @@ toggleBtn.addEventListener("click", () => {
         logoImage.setAttribute("src", "images/logo.png");
     } else {
         localStorage.setItem("colorMode", "dark");
-        logoImage.setAttribute("src", "images/logo1.png");
+        logoImage.setAttribute("src", "images/logo-black.png");
     }
 });
 ///////////////////////////////
@@ -149,7 +149,7 @@ const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 if (prefersDarkScheme.matches) {
     document.documentElement.classList.toggle("dark");
     localStorage.setItem("colorMode", "dark");
-    logoImage.setAttribute("src", "images/logo1.png");
+    logoImage.setAttribute("src", "images/logo-black.png");
 }
 // toggleBtn.addEventListener("toggle", () => {
 //     document.documentElement.classList.toggle("light");
