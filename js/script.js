@@ -141,6 +141,8 @@ toggleBtn.addEventListener("click", () => {
         logoImage.setAttribute("src", "images/logo1.png");
     }
 });
+///////////////////////////////
+// use  default theme
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
