@@ -64,6 +64,7 @@ Medium: 11px
 :root {
     --primary: #4267b2;
     --dark-primary: #4267b2;
+    --dark-primarying: #4267b2;
     --btn-primary: #4267b2;
     --icon: #4267b2;
     --icon-box: #bddcf0;
@@ -80,6 +81,7 @@ Medium: 11px
     --top-shade-light: #3b5da0;
     --shade--dark: #141f35;
     --primary-light-transparent: #4267b2a4;
+    --primary-lighting-transparent: #4267b2a4;
     --primary-dark-transparent: #4267b270;
     --dark-transparent: #4267b270;
     --tint-lightest-colorless: #d9e1f000;
@@ -106,8 +108,9 @@ Medium: 11px
 
 .dark {
     --primary: #3e7bf6;
-    --dark-tint-lighter: #2a3338;
+    --dark-tint-lighter: #60ffff;
     --dark-primary: #3879ff;
+    --dark-primarying: #0d1d26;
     --btn-primary: #3c79f7;
     --btn-tint-light: #0047ff;
     --icon: #60ffff;
@@ -125,10 +128,11 @@ Medium: 11px
     --shade-light: #3b5da0;
     --shade--dark: #141f35;
     --primary-light-transparent: #3e7bf6a4;
+    --primary-lighting-transparent: #60ffffa4;
     --primary-dark-transparent: #3e7bf670;
     --dark-transparent: #fff;
     --tint-lightest-colorless: #d9e1f000;
-    --tint-lighter-transparent: #bddcf03b;
+    --tint-lighter-transparent: #0d1d263b;
     --white: #05080a;
     --btn-white: #fff;
     --grey-lightest: #fff;
@@ -145,6 +149,416 @@ Medium: 11px
     --sticky-colored: rgba(0, 0, 0, 0.9);
     --sticky-coloring: #fff;
     --sticky-shadow: rgba(255, 255, 255, 0.03);
+}
+
+
+/* 
+:root {
+    --primary: #4267b2;
+    --tint-lightest: #d9e1f0;
+    --tint-lighter: #bddcf0;
+    --tint-light: #5576ba;
+    --shade-light: #3b5da0;
+    --shade--dark: #141f35;
+    --primary-light-transparent: #4267b2a4;
+    --primary-dark-transparent: #4267b270;
+    --tint-lightest-colorless: #d9e1f000;
+    --tint-lighter-transparent: #bddcf03b;
+    --special-color: #312e81;
+    --white: #fff;
+    --grey-lightest: #ddd;
+    --hue-light-transparent: #ecf0f79c;
+    --hue-light: #e7f2fa;
+    --hue-lighter: #e7f2fa70;
+    --grey-lighter: #6f6f6f;
+    --grey-light: #767676;
+    --grey: #555;
+    --grey-dark: #aaa;
+    --grey-darker: #333;
+    --shadow: #365c96;
+} */
+
+
+/* 
+:root {
+    --primary: #4267b2;
+    --icon: #4267b2;
+    --icon-box: #bddcf0;
+    --tint-lightest: #d9e1f0;
+    --pricing-tint-lightest: #d9e1f0;
+    --complete-tint-lightest: #d9e1f0;
+    --tint-lighter: #bddcf0;
+    --step-tint-lighter: #bddcf0;
+    --tint-light: #5576ba;
+    --shade-light: #3b5da0;
+    --pricing-shade-light: #3b5da0;
+    --top-shade-light: #3b5da0;
+    --shade--dark: #141f35;
+    --primary-light-transparent: #4267b2a4;
+    --primary-dark-transparent: #4267b270;
+    --tint-lightest-colorless: #d9e1f000;
+    --tint-lighter-transparent: #bddcf03b;
+    --special-color: #9492d8;
+    --white: #fff;
+    --grey-lightest: #ddd;
+    --hue-light-transparent: #ecf0f79c;
+    --hue-light: #e7f2fa;
+    --hue-lighter: #e7f2fa70;
+    --grey-lighter: #6f6f6f;
+    --grey-light: #767676;
+    --grey: #555;
+    --grey-dark: #aaa;
+    --grey-darker: #333;
+    --shadow: #365c96;
+    --to-top-white: #fff;
+    --sticky-color: rgba(255, 255, 255, 0.8);
+    --sticky-shadow: rgba(0, 0, 0, 0.03);
+}
+
+.dark {
+    --primary: #3e7bf6;
+    --icon: #60ffff;
+    --icon-box: #0d1d26;
+    --special-color: #1814a8;
+    --grey: #fff;
+    --top-shade-light: #2253b4;
+    --pricing-shade-light: #0070ff;
+    --tint-lightest: #000;
+    --pricing-tint-lightest: #0b3380;
+    --complete-tint-lightest: #181f23;
+    --tint-lighter: #2a3338;
+    --step-tint-lighter: #0d1d26;
+    --tint-light: #0047ff;
+    --shade-light: #3b5da0;
+    --shade--dark: #141f35;
+    --primary-light-transparent: #3e7bf6a4;
+    --primary-dark-transparent: #3e7bf670;
+    --tint-lightest-colorless: #d9e1f000;
+    --tint-lighter-transparent: #bddcf03b;
+    --white: #05080a;
+    --grey-lightest: #fff;
+    --hue-light-transparent: #05080a;
+    --hue-light: #080f11;
+    --hue-lighter: #080f1170;
+    --grey-lighter: #fff;
+    --grey-light: #fff;
+    --grey-dark: #fff;
+    --grey-darker: #fff;
+    --shadow: #365c96;
+    --to-top-white: #fff;
+    --sticky-color: rgba(0, 0, 0, 0.8);
+    --sticky-shadow: rgba(255, 255, 255, 0.03);
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* Does NOT work on Safari */
+    /* scroll-behavior: smooth; */
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--grey);
+    /* Only works if there is nothing absolutely positioned in relation to body */
+    overflow-x: hidden;
+}
+
+
+/**************************/
+
+
+/* GENRAL REUSABLE COMPONENTS */
+
+
+/**************************/
+
+.container {
+    /* 1140px */
+    max-width: 120rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+.containers {
+    max-width: 170rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+}
+
+
+/* .containerss {
+    max-width: 170rem;
+    padding: 0 3.2rem;
+    margin: 0 auto;
+} */
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+    row-gap: 9.6rem;
+    /* margin-bottom: 9.6rem; */
+}
+
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+    margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* .grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+} */
+
+.grid--center-v {
+    align-items: center;
+}
+
+.center {
+    text-align: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    font-weight: 700;
+    color: var(--grey-darker);
+    /* color: #45260a; */
+    /* color: #343a40; */
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+}
+
+.heading-primary {
+    font-size: 5.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 9.6rem;
+}
+
+.heading-secondarys {
+    font-size: 3.6rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.heading-tertiary {
+    font-size: 3.3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading-box {
+    background-color: var(--icon-box);
+    border-radius: 50px;
+    padding: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.subheading-box-dark {
+    background-color: var(--dark-primarying);
+    border-radius: 50px;
+    padding: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.subheading-box-light {
+    background-color: var(--tint-lighter-transparent);
+    border-radius: 50px;
+    padding: 1.6rem;
+    display: inline-block;
+    margin-bottom: 1.6rem;
+}
+
+.subheading {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-image: linear-gradient(45deg, var(--icon), var(--icon));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.subheading-dark {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-image: linear-gradient( 45deg, var(--dark-tint-lighter), var(--dark-tint-lighter));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+}
+
+.subheading-light {
+    display: block;
+    letter-spacing: 0.75px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--primary-lighting-transparent);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    border-radius: 9px;
+    /* Only necessary for .btn */
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+    /* Put transition on original "state" */
+    /* transition: background-color 0.3s; */
+    transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+    background-image: linear-gradient( 270deg, var(--btn-tint-light), var(--btn-primary));
+    color: var(--btn-white);
+}
+
+.btn--full:hover,
+.btn--full:active {
+    background-image: linear-gradient( 270deg, var(--btn-tint-light), var(--btn-primary));
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+    background-color: var(--white);
+    color: var(--grey);
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+    background-color: var(--tint-lightest);
+    /* border: 3px solid var(--white); */
+    /* Trick to add border inside */
+    box-shadow: inset 0 0 0 3px var(--white);
+}
+
+.btn--form {
+    background-image: linear-gradient( 270deg, var(--btn-tint-light), var(--btn-primary));
+    color: var(--btn-white);
+    max-width: fit-content;
+    padding: 1.2rem 2.6rem;
+    margin: 0 auto;
+}
+
+.btn--form:hover {
+    background-image: linear-gradient( 270deg, var(--btn-tint-light), var(--btn-primary));
+    box-shadow: 0 5px 20px var(--shadow);
+}
+
+.link:link,
+.link:visited {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    transition: all 0.3s;
+}
+
+
+/* .link:hover,
+.link:active {
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+} */
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.list-item {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+}
+
+.list-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--icon);
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* HELPER/SETTINGS CLASSES */
+
+.margin-right-sm {
+    margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-md {
+    margin-bottom: 9.6rem !important;
+}
+
+.center-text {
+    text-align: center;
+}
+
+strong {
+    font-weight: 500;
 }
 
 .preloader {

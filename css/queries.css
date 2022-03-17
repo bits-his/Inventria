@@ -286,6 +286,9 @@
     .section-hero {
         padding: 2.4rem 0 6.4rem 0;
     }
+    .pricing-plan {
+        width: 100%;
+    }
     .hero {
         padding: 0 3.2rem;
     }
