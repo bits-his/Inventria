@@ -761,7 +761,6 @@ strong {
 
 html {
     font-size: 60%;
-    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
@@ -773,6 +772,8 @@ body {
     /* Only works if there is nothing cabsolutely positioned in relation to body */
     overflow-x: hidden;
     background-color: var(--white);
+    max-width: 100%;
+    height: auto;
 }
 
 i {
@@ -1134,7 +1135,7 @@ section {
 }
 
 .hero-img {
-    width: 85%;
+    width: 100%;
 }
 
 
