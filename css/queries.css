@@ -9,7 +9,8 @@
 
 /**************************/
 
-@media (max-width: 100em) {
+
+/* @media (max-width: 100em) {
     .pricing-arrangement {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -20,7 +21,7 @@
         grid-column: 2 / 3;
         grid-row: 2 / 3;
     }
-}
+} */
 
 
 /**************************/
@@ -83,7 +84,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .pricing-plan {
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -227,12 +228,12 @@
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        text-align: center !important;
+        /* text-align: center !important; */
         margin: 0 auto;
         align-items: center;
     }
     .list {
-        align-items: center;
+        padding: 4rem;
     }
     .heading-secondary {
         margin-bottom: 5.2rem;

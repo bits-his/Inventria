@@ -12,10 +12,10 @@ console.log(h1);
 //   h1.style.padding = "5rem";
 // });
 // hide preloader on page load
-const preloader = document.querySelector(".preloader");
-window.addEventListener("load", () => {
-    preloader.classList.add("remove");
-});
+// const preloader = document.querySelector(".preloader");
+// window.addEventListener("load", () => {
+//     preloader.classList.add("remove");
+// });
 
 const header = document.querySelector(".header"),
     navBtn = document.querySelector(".nav-toggler"),
