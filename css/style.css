@@ -1447,7 +1447,7 @@ section {
     padding: 3.2rem;
     justify-self: center;
     position: relative;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .pricing-plan--complete:hover {
@@ -1455,21 +1455,19 @@ section {
     cursor: pointer;
 }
 
-
-/* 
 .pricing-plan--complete::after {
     content: "Best value";
     position: absolute;
-    top: 8%;
+    top: 6%;
     right: -30%;
     text-transform: uppercase;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 500;
     color: var(--btn-white);
     background-color: var(--special-color);
     padding: 0.8rem 8rem;
     transform: rotate(45deg);
-} */
+}
 
 .plan-header {
     text-align: center;
