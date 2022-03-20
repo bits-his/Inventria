@@ -640,6 +640,10 @@ Medium: 11px
     margin-bottom: 9.6rem !important;
 }
 
+.margin-top-md {
+    margin-top: 9.6rem !important;
+}
+
 .center-text {
     text-align: center;
 }
@@ -802,6 +806,7 @@ strong {
 html {
     font-size: 60%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -810,7 +815,6 @@ body {
     font-weight: 400;
     color: var(--grey);
     /* Only works if there is nothing cabsolutely positioned in relation to body */
-    overflow-x: hidden;
     background-color: var(--white);
     max-width: 100%;
     height: auto;
@@ -928,7 +932,7 @@ i {
 
 .to-top {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     right: 20px;
     color: var(--to-top-white);
     background: var(--top-shade-light);
@@ -947,7 +951,7 @@ i {
 
 .whatsapp {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     left: 20px;
     color: var(--to-top-white);
     background: var(--whatsapp);
