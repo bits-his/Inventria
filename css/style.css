@@ -1081,8 +1081,8 @@ section {
     padding-left: 20px;
 }
 
-.main-nav-link:link,
-.main-nav-link:visited {
+.main-nav__link:link,
+.main-nav__link:visited {
     display: inline-block;
     text-decoration: none;
     color: var(--grey);
@@ -1092,26 +1092,26 @@ section {
     text-transform: capitalize;
 }
 
-.small {
+.main-nav__link--small {
     padding-left: 15rem;
 }
 
-.main-nav-link:hover,
-.main-nav-link:active {
+.main-nav__link:hover,
+.main-nav__link:active {
     text-shadow: 0 5px 20px var(--primary);
     cursor: pointer;
 }
 
-.main-nav-link.nav-cta:link,
-.main-nav-link.nav-cta:visited {
+.main-nav__link.main-nav__link--nav-cta:link,
+.main-nav__link.main-nav__link--nav-cta:visited {
     padding: 1.2rem 2.4rem;
     border-radius: 9px;
     color: var(--btn-white);
     background-image: linear-gradient(270deg, var(--tint-light), var(--primary));
 }
 
-.main-nav-link.nav-cta:hover,
-.main-nav-link.nav-cta:active {
+.main-nav__link.main-nav__link--nav-cta:hover,
+.main-nav__link.main-nav__link--nav-cta:active {
     color: var(--btn-white);
     box-shadow: 0 5px 20px var(--primary);
     cursor: pointer;

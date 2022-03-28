@@ -206,11 +206,11 @@
         flex-direction: column;
         gap: 4.8rem;
     }
-    .main-nav-link:link,
-    .main-nav-link:visited {
+    .main-nav__link:link,
+    .main-nav__link:visited {
         font-size: 3rem;
     }
-    .small {
+    .main-nav__link--small {
         padding-left: 0%;
         padding-top: 15rem;
     }
