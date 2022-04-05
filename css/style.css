@@ -106,6 +106,8 @@ Medium: 11px
     --sticky-shadow: rgba(0, 0, 0, 0.03);
     --sticky-coloring: #000;
     --whatsapp: #25d366;
+    --sticky-colors: rgba(255, 255, 255, 0.5);
+    --sticky-shadows: rgba(0, 0, 0, 0.3);
 }
 
 .light {
@@ -154,6 +156,8 @@ Medium: 11px
     --sticky-shadow: rgba(0, 0, 0, 0.03);
     --sticky-coloring: #000;
     --whatsapp: #25d366;
+    --sticky-colors: rgba(255, 255, 255, 0.5);
+    --sticky-shadows: rgba(0, 0, 0, 0.3);
 }
 
 .dark {
@@ -201,6 +205,8 @@ Medium: 11px
     --sticky-coloring: #fff;
     --sticky-shadow: rgba(255, 255, 255, 0.03);
     --whatsapp: #075e54;
+    --sticky-colors: rgba(0, 0, 0, 0.5);
+    --sticky-shadows: rgba(255, 255, 255, 0.3);
 }
 
 
@@ -265,6 +271,8 @@ Medium: 11px
     --to-top-white: #fff;
     --sticky-color: rgba(255, 255, 255, 0.8);
     --sticky-shadow: rgba(0, 0, 0, 0.03);
+    --sticky-colors: rgba(255, 255, 255, 0.5);
+    --sticky-shadows: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -301,6 +309,8 @@ Medium: 11px
     --to-top-white: #fff;
     --sticky-color: rgba(0, 0, 0, 0.8);
     --sticky-shadow: rgba(255, 255, 255, 0.03);
+    --sticky-colors: rgba(0, 0, 0, 0.5);
+    --sticky-shadows: rgba(255, 255, 255, 0.3);
 } */
 
 
@@ -332,6 +342,21 @@ Medium: 11px
     max-width: 170rem;
     padding: 0 3.2rem;
     margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--white);
+    box-shadow: var(--hue-light);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--icon);
+    border-radius: 0.5em;
+    box-shadow: inset 0.15em 0.1em 0.1em var(--sticky-colors), inset -0.15em -0.1em 0.1em var(--sticky-shadows);
 }
 
 
@@ -1660,6 +1685,7 @@ footer {
 
 .grid--footer {
     grid-template-columns: repeat(3, 1fr);
+    column-gap: 4rem;
 }
 
 .logo-col {
@@ -1696,7 +1722,7 @@ ul {
 }
 
 .copyright {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 1.6;
     color: var(--grey-light);
     margin-top: auto;
@@ -1718,7 +1744,7 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    font-size: 2rem;
+    font-size: 1.6rem;
     padding-top: 3rem;
 }
 
@@ -1756,7 +1782,7 @@ ul {
 }
 
 .final {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .footer .btn {
