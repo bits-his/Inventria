@@ -68,11 +68,11 @@ Medium: 11px
     --btn-primary: #4267b2;
     --icon: #4267b2;
     --icon-box: #bddcf0;
-    --tint-lightest: #d9e1f0;
+    --tint-lightest: #fff;
     --step-tint-lightest: #bddcf0;
     --step-tint-lighter: #d9e1f0;
     --pricing-tint-lightest: #d9e1f0;
-    --complete-tint-lightest: #d9e1f0;
+    --complete-tint-lightest: #fff;
     --tint-lighter: #bddcf0;
     --dark-tint-lighter: #bddcf0;
     --tint-light: #5576ba;
@@ -108,6 +108,7 @@ Medium: 11px
     --whatsapp: #25d366;
     --sticky-colors: rgba(255, 255, 255, 0.5);
     --sticky-shadows: rgba(0, 0, 0, 0.3);
+    --sticky-coloreds: #ffffff;
 }
 
 .light {
@@ -153,6 +154,7 @@ Medium: 11px
     --to-top-white: #fff;
     --sticky-color: rgba(255, 255, 255, 0.8);
     --sticky-colored: rgba(255, 255, 255, 0.8);
+    --sticky-coloreds: #ffffff;
     --sticky-shadow: rgba(0, 0, 0, 0.03);
     --sticky-coloring: #000;
     --whatsapp: #25d366;
@@ -202,116 +204,13 @@ Medium: 11px
     --to-top-white: #fff;
     --sticky-color: #090c10cc;
     --sticky-colored: #090c10e6;
+    --sticky-coloreds: #090c10;
     --sticky-coloring: #fff;
     --sticky-shadow: rgba(255, 255, 255, 0.03);
     --whatsapp: #075e54;
     --sticky-colors: rgba(0, 0, 0, 0.5);
     --sticky-shadows: rgba(255, 255, 255, 0.3);
 }
-
-
-/* 
-:root {
-    --primary: #4267b2;
-    --tint-lightest: #d9e1f0;
-    --tint-lighter: #bddcf0;
-    --tint-light: #5576ba;
-    --shade-light: #3b5da0;
-    --shade--dark: #141f35;
-    --primary-light-transparent: #4267b2a4;
-    --primary-dark-transparent: #4267b270;
-    --tint-lightest-colorless: #d9e1f000;
-    --tint-lighter-transparent: #bddcf03b;
-    --special-color: #312e81;
-    --white: #fff;
-    --grey-lightest: #ddd;
-    --hue-light-transparent: #ecf0f79c;
-    --hue-light: #e7f2fa;
-    --hue-lighter: #e7f2fa70;
-    --grey-lighter: #6f6f6f;
-    --grey-light: #767676;
-    --grey: #555;
-    --grey-dark: #aaa;
-    --grey-darker: #333;
-    --shadow: #365c96;
-} */
-
-
-/* 
-:root {
-    --primary: #4267b2;
-    --icon: #4267b2;
-    --icon-box: #bddcf0;
-    --tint-lightest: #d9e1f0;
-    --pricing-tint-lightest: #d9e1f0;
-    --complete-tint-lightest: #d9e1f0;
-    --tint-lighter: #bddcf0;
-    --step-tint-lighter: #bddcf0;
-    --tint-light: #5576ba;
-    --shade-light: #3b5da0;
-    --pricing-shade-light: #3b5da0;
-    --top-shade-light: #3b5da0;
-    --shade--dark: #141f35;
-    --primary-light-transparent: #4267b2a4;
-    --primary-dark-transparent: #4267b270;
-    --tint-lightest-colorless: #d9e1f000;
-    --tint-lighter-transparent: #bddcf03b;
-    --special-color: #9492d8;
-    --white: #fff;
-    --grey-lightest: #ddd;
-    --hue-light-transparent: #ecf0f79c;
-    --hue-light: #e7f2fa;
-    --hue-lighter: #e7f2fa70;
-    --grey-lighter: #6f6f6f;
-    --grey-light: #767676;
-    --grey: #555;
-    --grey-dark: #aaa;
-    --grey-darker: #333;
-    --shadow: #365c96;
-    --to-top-white: #fff;
-    --sticky-color: rgba(255, 255, 255, 0.8);
-    --sticky-shadow: rgba(0, 0, 0, 0.03);
-    --sticky-colors: rgba(255, 255, 255, 0.5);
-    --sticky-shadows: rgba(0, 0, 0, 0.3);
-}
-
-
-.dark {
-    --primary: #3e7bf6;
-    --icon: #60ffff;
-    --icon-box: #0d1d26;
-    --special-color: #1814a8;
-    --grey: #fff;
-    --top-shade-light: #2253b4;
-    --pricing-shade-light: #0070ff;
-    --tint-lightest: #000;
-    --pricing-tint-lightest: #0b3380;
-    --complete-tint-lightest: #181f23;
-    --tint-lighter: #2a3338;
-    --step-tint-lighter: #0d1d26;
-    --tint-light: #0047ff;
-    --shade-light: #3b5da0;
-    --shade--dark: #141f35;
-    --primary-light-transparent: #3e7bf6a4;
-    --primary-dark-transparent: #3e7bf670;
-    --tint-lightest-colorless: #d9e1f000;
-    --tint-lighter-transparent: #bddcf03b;
-    --white: #05080a;
-    --grey-lightest: #fff;
-    --hue-light-transparent: #05080a;
-    --hue-light: #080f11;
-    --hue-lighter: #080f1170;
-    --grey-lighter: #fff;
-    --grey-light: #fff;
-    --grey-dark: #fff;
-    --grey-darker: #fff;
-    --shadow: #365c96;
-    --to-top-white: #fff;
-    --sticky-color: rgba(0, 0, 0, 0.8);
-    --sticky-shadow: rgba(255, 255, 255, 0.03);
-    --sticky-colors: rgba(0, 0, 0, 0.5);
-    --sticky-shadows: rgba(255, 255, 255, 0.3);
-} */
 
 
 /* ********************************************* */
@@ -851,11 +750,10 @@ i {
     /* padding: 1rem; */
 }
 
-
-/* body[data-aos-easing="new-easing"] [data-aos],
+body[data-aos-easing="new-easing"] [data-aos],
 [data-aos][data-aos][data-aos-easing="new-easing"] {
     transition-timing-function: cubic-bezier(0.25, 0.25, 0.75, 0.75);
-} */
+}
 
 
 /* 
