@@ -68,7 +68,7 @@ Medium: 11px
     --btn-primary: #4267b2;
     --icon: #4267b2;
     --icon-box: #bddcf0;
-    --tint-lightest: #fff;
+    --tint-lightest: #d9e1f0;
     --step-tint-lightest: #bddcf0;
     --step-tint-lighter: #d9e1f0;
     --pricing-tint-lightest: #d9e1f0;
@@ -730,7 +730,6 @@ strong {
 html {
     font-size: 60%;
     scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 body {
@@ -742,6 +741,7 @@ body {
     background-color: var(--white);
     max-width: 100%;
     height: auto;
+    overflow-x: hidden;
 }
 
 i {
